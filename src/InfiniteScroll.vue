@@ -39,12 +39,8 @@ export default {
   watch: {
     loading () {
       setTimeout(() => {
-        if (!this.loading) {
-          if (this.lastDirection == 'top') {
-            this.target.scrollTop = this.target.scrollHeight - this.target.offsetHeight - this.offset - 2
-          } else if (this.lastDirection == 'bottom') {
-            this.target.scrollTop = this.offset + 2
-          }
+        if (!this.loading && this.lastDirection == 'top') {
+          this.target.scrollTop = this.target.scrollHeight - this.target.offsetHeight - this.offset - 2
         }
       }, 5)
     }
