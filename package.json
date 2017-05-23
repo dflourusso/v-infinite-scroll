@@ -1,0 +1,27 @@
+{
+  "name": "v-infinite-scroll",
+  "version": "1.0.0",
+  "description": "Bidirectional infinite-scroll component for Vue.js",
+  "author": "Daniel Fernando Lourusso <dflourusso@gmail.com>",
+  "main": "dist/v-infinite-scroll.js",
+  "license": "MIT",
+  "scripts": {
+    "dist": "vue build ./src/v-infinite-scroll.js --config ./build.config.js --dist ./dist/ --prod --lib",
+    "dist:demo": "vue build ./demo/index.js --config ./demo/build.config.js --dist ./docs/ --prod",
+    "build": "npm run dist -- --disable-compress",
+    "start": "npm run dev",
+    "dev": "vue build ./demo/index.js --config ./demo/build.config.js",
+    "demo:open": "open 'http://localhost:3000/'; serve ./demo/"
+  },
+  "files": [
+    "dist/"
+  ],
+  "keywords": [
+    "vue",
+    "vue-infinite-scroll",
+    "v-infinite-scroll",
+    "infinite-scroll",
+    "infinite-scroll-vue",
+    "vue-scroll"
+  ]
+}
