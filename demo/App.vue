@@ -72,6 +72,8 @@ p.description
 .infinite-scroll
   max-height 400px
   overflow-y scroll
+  -webkit-overflow-scrolling touch
+  overflow-scrolling touch
   color #155b95
   border 1px solid gray
   padding 20px
