@@ -1,6 +1,6 @@
 {
   "name": "v-infinite-scroll",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Bidirectional infinite-scroll component for Vue.js",
   "author": "Daniel Fernando Lourusso <dflourusso@gmail.com>",
   "main": "dist/v-infinite-scroll.js",
