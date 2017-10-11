@@ -85,6 +85,25 @@ export default {
 </script>
 ```
 
+Properties
+----------
+
+| Name                     | Type    | Required | Default value | Info                                                |
+|--------------------------|---------|----------|---------------|-----------------------------------------------------|
+| **loading**              | Boolean | No       |               | Must be true if data is being loaded                |
+| **offset**               | Number  | No       | 0             | Distance of top or bottom to emit the events        |
+| **onTopScrollsToBottom** | Boolean | No       | True          | When using bidirectional scroll, automatically scrolls to the bottom after load a previous page |
+
+
+Events
+----------
+
+| Name              | Info                                             |
+|-------------------|--------------------------------------------------|
+| **top**           | Triggered after the scroll arrives at the top    |
+| **bottom**        | Triggered after the scroll arrives at the bottom |
+
+
 Author
 -------
 
