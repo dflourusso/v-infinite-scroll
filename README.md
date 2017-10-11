@@ -92,7 +92,7 @@ Properties
 |--------------------------|---------|----------|---------------|-----------------------------------------------------|
 | **loading**              | Boolean | No       |               | Must be true if data is being loaded                |
 | **offset**               | Number  | No       | 0             | Distance of top or bottom to emit the events        |
-| **onTopScrollsToBottom** | Boolean | No       | True          | When using bidirectional scroll, automatically scrolls to the bottom after load a previous page |
+| **on-top-scrolls-to-bottom** | Boolean | No       | True          | When using bidirectional scroll, automatically scrolls to the bottom after load a previous page |
 
 
 Events
