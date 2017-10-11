@@ -8,7 +8,8 @@ export default {
   name: 'v-infinite-scroll',
   props: {
     loading: {type: Boolean},
-    offset: {type: Number, default: 0}
+    offset: {type: Number, default: 0},
+    onTopScrollsToBottom: {type: Boolean, default: true}
   },
   data () {
     return {
@@ -39,7 +40,7 @@ export default {
   watch: {
     loading () {
       setTimeout(() => {
-        if (!this.loading && this.lastDirection == 'top') {
+        if (this.onTopScrollsToBottom && !this.loading && this.lastDirection == 'top') {
           this.target.scrollTop = this.target.scrollHeight - this.target.offsetHeight - this.offset - 2
         }
       }, 5)
